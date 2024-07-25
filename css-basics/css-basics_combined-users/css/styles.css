@@ -50,21 +50,29 @@ aside .user {
   padding: 12px;
   border-radius: 4px;
 }
-
-.name {
+aside .name {
   font-size: 16px;
+}
+aside .bio {
+  font-size: 12px;
+  margin: 6px 0;
+}
+aside .location {
+  font-size: 10px;
+}
+.name {
+  font-size: 18px;
   text-transform: uppercase;
   margin: 0;
 }
 
 .bio {
-  font-size: 12px;
+  font-size: 14px;
   color: darkslategray;
-  margin: 6px 0;
 }
 
 .location {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   text-align: end;
   margin: 0;
