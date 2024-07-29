@@ -34,6 +34,9 @@ body {
   border-radius: 50%;
   max-width: 50%;
   height: auto;
+  display: flex;
+  align-self: center;
+  width: 200px;
 }
 
 .tech-stack__list {
@@ -54,9 +57,4 @@ body {
 .profile {
   display: flex;
   flex-direction: column;
-}
-.profile__image {
-  display: flex;
-  align-self: center;
-  width: 200px;
 }
