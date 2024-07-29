@@ -45,7 +45,21 @@ li {
   margin: 0;
   background-color: white;
 }
-
+aside .user {
+  max-width: 250px;
+  padding: 12px;
+  border-radius: 4px;
+}
+aside .name {
+  font-size: 16px;
+}
+aside .bio {
+  font-size: 12px;
+  margin: 6px 0;
+}
+aside .location {
+  font-size: 10px;
+}
 .name {
   font-size: 18px;
   text-transform: uppercase;
@@ -64,6 +78,14 @@ li {
   margin: 0;
 }
 
+ul .bio {
+  display: none;
+}
+
+ul .location {
+  text-align: left;
+  color: darkslategray;
+}
 /*
   Part 1
 
