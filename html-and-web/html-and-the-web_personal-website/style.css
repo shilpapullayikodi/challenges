@@ -1,30 +1,94 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 8px;
+    padding: 0;
+    line-height: 1.5;
+  }
+
 body{
-    background-color: wheat;
+    background-color: whitesmoke;
 
 }
-
+#contact{
+    border: dashed 1px black;
+}
 @media (min-width: 600px) {
   width: 300px;
   background-color: :read-only;
 }
-table th,tr{
-    border: 4px;
-    background-color: white;
-    padding: 10px;
-    
-    border collapse: collapse;
-    
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-table.education{
-    border-color: blue;
-    background-color: aqua;
-    padding: 10px;
-    width: 100%;
+td, th {
+    border: 1px solid black;
+    padding: 1%;
 }
 
-table.work-experience{
-    padding: 10px;
-    border:solid 10px  black;
+tr th:nth-last-child() {
+    width: 30px;
+}
+
+tr td:nth-child(2) {
+    width: 20%;
+}
+
+#welcome{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    color:  red;
+    font-weight: bolder;
+}
+#profile-photo figcaption{
+    font-size: smaller;
+    margin: 0px;
+    color: grey;
+    font-style: italic;
+}
+
+#profile-photo img{
+    width: 15%;
+}
+
+section.col-6{
+    width: 50%;
+    float: left;
+}
+
+#skills{
     width: 100%;
+    display: flex;
+}
+
+img.social-logo{
+    width: 40px;
+}
+
+#social-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#social-links figure{
+    display: flex;
+    flex-direction: column;
+}
+
+#social-links figure *{
+    align-self: center;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+}
+
+.clear {
+    margin-top: 30px;
 }

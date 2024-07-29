@@ -7,59 +7,88 @@
   </head>
   <header>
     <body>
-      <h2>Welcome to my Personal Website</h2>
-      <figure>
-        <img
-          src="assets/shilpa-pullayikodi.jpg"
-          alt=" "
-          style="height: 10cm; width: 10cm"
-        />
-        <figcaption>Shilpa Pullayikodi</figcaption>
-      </figure>
+      <!-- <h1 id="welcome">Welcome to my Personal Website</h1> -->
+      <h1>Shilpa Pullayikodi</h1>
       <nav id="nav">
         <a href="#contact">Contact</a>
         <a href="#biography">Biography</a>
       </nav>
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>Software Testing</li>
-          <li>Web development</li>
-          <li>HTML</li>
-          <li>Problem solving</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Languages</h2>
-        <ul>
-          <li>English</li>
-          <li>German</li>
-          <li>Malayalam</li>
-        </ul>
-      </section>
+      <figure id="profile-photo">
+        <img src="assets/shilpa-pullayikodi.jpg" alt=" " />
+        <figcaption>Shilpa Pullayikodi</figcaption>
+      </figure>
       <section id="contact">
         <h2>Contact</h2>
         <section>
-          <div>phone number: +491786471878</div>
-          <div>Email: shilpapullayikodi@gmail.com</div>
+          <div><b>Mobile: </b>+49 1786471878</div>
+          <div><b>Email: </b>shilpapullayikodi@gmail.com</div>
         </section>
-        <section>
-          <a href="https://www.linkedin.com/in/shilpa-pullayikodi-a01707140/"
-            >linkedin</a
-          >
-          <a href="https://github.com/shilpapullayikodi">Github</a>
-          <a href="https://www.xing.com/profile/Shilpa_Pullayikodi">Xing</a>
+      </section>
+      <section class="flex">
+        <section class="col-6">
+          <h2>Skills</h2>
+          <ul>
+            <li>Software Testing</li>
+            <li>Web development</li>
+            <li>HTML</li>
+            <li>Problem solving</li>
+          </ul>
         </section>
+        <section class="col-6">
+          <h2>Languages</h2>
+          <ul>
+            <li>English</li>
+            <li>German</li>
+            <li>Malayalam</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="social-links">
+        <figure>
+          <img
+            src="https://www.uni-giessen.de/de/fbz/zentren/zeu/Ress/linkedinlogo/@@images/image.png"
+            alt=" "
+            class="social-logo"
+          />
+          <figcaption>
+            <a href="https://www.linkedin.com/in/shilpa-pullayikodi-a01707140/"
+              >linkedin</a
+            >
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+            alt=" "
+            class="social-logo"
+          />
+          <figcaption>
+            <a href="https://github.com/shilpapullayikodi">Github</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0aj9rjmjUG-N9pBz59S1NAnvoCFtM-6Mwg&s"
+            alt=" "
+            class="social-logo"
+          />
+          <figcaption>
+            <a href="https://www.xing.com/profile/Shilpa_Pullayikodi">Xing</a>
+          </figcaption>
+        </figure>
       </section>
 
       <section id="biography">
         <h2>Biography</h2>
         <section>
-          <h4>About my self</h4>
+          <h3>About my self</h3>
           <p>
-            I am Shilpa Pullayikodi. I come from India. <br />I am 28 years old.
-            Since 2.5 years i am living in Germany. <br />I worked as a Software
-            Test Engineer.It was popularised in the 1960s with the release of
+            I am Shilpa Pullayikodi. I come from India.I am 28 years old. Since
+            2.5 years i am living in Germany.I worked as a Software Test
+            Engineer.It was popularised in the 1960s with the release of
             Letraset sheets containing Lorem Ipsum passages, and more recently
             with desktop publishing software like Aldus PageMaker including
             versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the
@@ -82,8 +111,8 @@
             Aldus PageMaker including versions of Lorem Ipsum.
           </p>
         </section>
-        <section>
-          <h4>CV</h4>
+        <section class="clear">
+          <h3>CV</h3>
           <section>
             <table class="education">
               <tr>
@@ -126,9 +155,12 @@
           </section>
         </section>
       </section>
+      <hr class="clear" />
     </body>
-    <footer>
-      <p>Basic information about myself</p>
+    <footer class="flex clear">
+      <section class="col-3">Privacy</section>
+      <section class="col-3">Imprint</section>
+      <section class="col-3">Feed</section>
     </footer>
   </header>
 </html>
