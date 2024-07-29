@@ -62,7 +62,7 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 12%;
+  width: 50%;
   height: 100px;
 }
 
@@ -108,13 +108,6 @@ h1 {
     background-color: rgb(225, 234, 126);
   }
 }
-
 .box--five {
   width: 100%;
-}
-
-@meta (min-width:599px) {
-  .box--five img {
-    width: 100%;
-  }
 }
