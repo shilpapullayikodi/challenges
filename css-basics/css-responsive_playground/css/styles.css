@@ -62,15 +62,26 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 100px;
+  width: 12%;
   height: 100px;
 }
 
 .box--two {
   background-color: lightgreen;
 
-  width: 100px;
+  width: 100%;
   height: 100px;
+}
+@media (min-width: 600px) {
+  .box--two {
+    width: 200px;
+  }
+}
+/*miin width > 122**/
+@media (min-width: 1200px) {
+  .box--two {
+    width: 400px;
+  }
 }
 
 .box--three {
@@ -80,17 +91,30 @@ h1 {
   height: 250px;
 }
 
+@media (orientation: landscape) {
+  .box--three {
+    width: 100%;
+  }
+}
+
 .box--four {
   background-color: lightgray;
 
   width: 100px;
   height: 100px;
 }
+@media (prefers-color-scheme: dark) {
+  .box--four {
+    background-color: rgb(225, 234, 126);
+  }
+}
 
 .box--five {
   width: 100%;
 }
 
-.box--five img {
-  width: 100%;
+@meta (min-width:599px) {
+  .box--five img {
+    width: 100%;
+  }
 }
