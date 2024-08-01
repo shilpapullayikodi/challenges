@@ -20,6 +20,10 @@ body {
   grid-template-rows: 300px 200px 300px;
   gap: 1rem;
   padding: 1rem;
+  grid-template-areas:
+    "ba ap me"
+    " pe ap ca"
+    "pe to ca";
   /* Add styles here */
 }
 
@@ -32,25 +36,31 @@ body {
 }
 
 .image-board__image--1 {
+  grid-area: ba;
   /* Add styles here */
 }
 
 .image-board__image--2 {
   /* Add styles here */
+  grid-area: ap;
 }
 
 .image-board__image--3 {
   /* Add styles here */
+  grid-area: me;
 }
 
 .image-board__image--4 {
+  grid-area: pe;
   /* Add styles here */
 }
 
 .image-board__image--5 {
   /* Add styles here */
+  grid-area: to;
 }
 
 .image-board__image--6 {
+  grid-area: ca;
   /* Add styles here */
 }
