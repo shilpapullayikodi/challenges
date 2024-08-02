@@ -8,7 +8,7 @@ console.clear();
 
 const coding = "Happy coding";
 console.log(coding);
-let hacking = coding;
+let hacking = "Happy hacking!";
 console.log(hacking);
 console.clear();
 const error = "This is an error";
