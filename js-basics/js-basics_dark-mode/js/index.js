@@ -9,7 +9,6 @@ darkElement.addEventListener("click", () => {
   bodyElement.classList.add("dark");
 });
 
-bodyElement.classList.add("dark");
 lightElement.addEventListener("click", () => {
   bodyElement.classList.remove("dark");
 });
@@ -19,3 +18,4 @@ toggleElement.addEventListener("click", () => {
 
   console.log(bodyElement);
 });
+// query and select that button , then if we click the button , background color will change
