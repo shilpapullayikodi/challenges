@@ -9,25 +9,34 @@ They should return the result of the respective calculation:
 - divide: the division of the two numbers
 - remainder: the modulo or remainder of of "a modulo b"
 */
-
+let a;
+let b;
+let result;
 function add(a, b) {
+  result = a + b;
+  console.log(result);
   // Code here
 }
 
 function subtract(a, b) {
+  result = a - b;
+
   // Code here
 }
 
 function multiply(a, b) {
+  result = a * b;
   // Code here
 }
 
 function divide(a, b) {
   // Code here
+  result = a / b;
 }
 
 function remainder(a, b) {
   // Code here
+  result = a % b;
 }
 
 /*
