@@ -15,7 +15,7 @@ let firstInput = document.querySelector('[data-js="first-input"]');
 let submitButton = document.querySelector('[data-js="button-uppercase"]');
 
 submitButton.addEventListener("click", () => {
-  inputValue = firstInput.value;
-  firstInputUppercase = inputValue.toUpperCase();
-  firstInput.value = firstInputUppercase;
+  /*inputValue = firstInput.value;
+  firstInputUppercase = inputValue.toUpperCase();*/
+  firstInput.value = firstInput.value.toUpperCase();
 });
