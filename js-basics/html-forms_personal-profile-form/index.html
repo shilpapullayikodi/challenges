@@ -10,6 +10,64 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+    <section>
+      <form>
+        <p>
+          <b
+            >We want to get to know you! Please enter your personal information
+          </b>
+        </p>
+
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="first-name"> First Name</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            required
+            minlength="3"
+            maxlength="8"
+          />
+
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last-name" />
+
+          <labe for="your-birthday">Your Birthday</labe>
+          <input type="date" id="your-birthday" name="your-birthday" />
+        </fieldset>
+        <p>
+          <b
+            >Can you tell us a little bit more ? We want to annoy you with
+            unwanted ads</b
+          >
+        </p>
+
+        <form>
+          <fieldset>
+            <legend>Further information</legend>
+            <label for="favorite-color">Favorite Color:</label>
+            <input
+              type="color"
+              id="favorite-color"
+              name="favorite-color"
+              value="#E5430F"
+            />
+            <label for="favorite-pet">What's your favorite Pet ?</label>
+            <select name="favorite-pet" id="favorite-pet">
+              <option value="please-choose-an-option">
+                --Please choose an option--
+              </option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="bird">Bird</option>
+              <option value="fish">Fish</option>
+              <option value="chicken-turtle">Chicken Turtle</option>
+            </select>
+          </fieldset>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </form>
+    </section>
   </body>
 </html>
