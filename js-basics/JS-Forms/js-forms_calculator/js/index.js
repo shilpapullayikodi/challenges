@@ -24,9 +24,21 @@ form.addEventListener("submit", (event) => {
 
   let result;
 
-  // --v-- write your code here --v--
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
 
-  // --^-- write your code here --^--
+  const numberA = Number.parseInt(data.numberA);
+  const numberB = Number.parseInt(data.numberB);
+
+  if (data.operator === "addition") {
+    result = add(numberA, numberB);
+  } else if (data.operator === "subtraction") {
+    result = subtract(numberA, numberB);
+  } else if (data.operator === "multiplication") {
+    result = multiply(numberA, numberB);
+  } else {
+    result = divide(numberA, numberB);
+  }
 
   resultOutput.textContent = result;
 });
