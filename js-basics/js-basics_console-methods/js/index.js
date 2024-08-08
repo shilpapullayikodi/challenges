@@ -6,6 +6,14 @@ console.clear();
 
 // 1. Store the sentence 'Happy coding!' in a variable named 'coding'.
 
+const coding = "Happy coding";
+console.log(coding);
+let hacking = "Happy hacking!";
+console.log(hacking);
+console.clear();
+const error = "This is an error";
+console.error(error);
+
 // 2. Display the variable 'coding' as a message in the console.
 
 // 3. Store the sentence 'Happy hacking!' in the variable named 'hacking'.
