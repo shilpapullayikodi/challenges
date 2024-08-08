@@ -3,45 +3,51 @@ console.clear();
 const form = document.querySelector('[data-js="form"]');
 const tosError = document.querySelector('[data-js="tos-error"]');
 const tosCheckbox = document.querySelector('[data-js="tos"]');
-const successMessage = document.querySelector('[data-js="success"]');
+const successMassege = document.querySelector('[data-js="success"]');
 
 function hideTosError() {
   tosError.setAttribute("hidden", "");
-  tosError.removeAttribute("hidden", "");
 }
 
-function showTosError() {}
-
-function hideSuccessMessage() {
-  successMessage.setAttribute("hidden", "");
+function showTosError() {
+  tosError.removeAttribute("hidden");
 }
 
-function showSuccessMessage() {
-  successMessage.removeAttribute("hidden", "");
+function hideSuccessMassege() {
+  successMassege.setAttribute("hidden", "");
+}
+
+function showSuccessMassege() {
+  successMassege.removeAttribute("hidden");
 }
 
 hideTosError();
-hideSuccessMessage();
+hideSuccessMassege();
+
+tosCheckbox.addEventListener("change", (event) => {
+  if (event.target.checked) {
+    hideTosError();
+    return;
+  }
+  showTosError();
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  console.log(event);
 
-  //console.log(event.target.elements.tos.value)
-  const formElements = event.target.elements;
-  //const data = Object.fromEntries(FormData);
-  const tos = formElements.tos.checked;
-
+  // --v-- write your code here --v--
+  const tos = event.target.elements.tos.checked;
   if (!tos) {
     showTosError();
-    hideSuccessMessage();
+    hideSuccessMassege();
     return;
   }
   hideTosError();
-  showSuccessMessage();
-
-  // --v-- write your code here --v--
-
+  showSuccessMassege();
+  event.target.reset();
   // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert
+  alert("Form submitted");
 });
