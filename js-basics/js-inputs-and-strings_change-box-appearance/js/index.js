@@ -17,13 +17,22 @@ For further information check MDN:
 
 */
 
-const inputColor = document.querySelector('[data-js="input-color"]');
-const inputRadius = document.querySelector('[data-js="input-radius"]');
-const inputRotation = document.querySelector('[data-js="input-rotation"]');
 const box = document.querySelector('[data-js="box"]');
+const inputColor = document.querySelector('[data-js="input-color"]');
+const inputRadius = document.querySelector('[data-js="input-radius"');
+const inputRotation = document.querySelector('[data-js="input-rotation"]');
 
-inputColor.addEventListener("input", () => {});
+inputColor.addEventListener("input", () => {
+  const colorValue = inputColor.value;
+  box.style.backgroundColor = `hsl(${colorValue}, 50%, 50%)`;
+});
 
-inputRadius.addEventListener("input", () => {});
+inputRadius.addEventListener("input", () => {
+  const radiusValue = inputRadius.value;
+  box.style.borderRadius = `${radiusValue}%`;
+});
 
-inputRotation.addEventListener("input", () => {});
+inputRotation.addEventListener("input", () => {
+  const rotationValue = inputRotation.value;
+  box.style.transform = `rotate(${rotationValue}deg)`;
+});
