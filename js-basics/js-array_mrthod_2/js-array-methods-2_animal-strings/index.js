@@ -25,7 +25,7 @@ const hippoExists = animalStrings.includes("hippo");
 console.log(hippoExists);
 
 // Hint: You can pass the starting index as second parameter.
-const catStartingFromIndexFiveExists = animalStrings.slice(5).includes("cat");
+const catStartingFromIndexFiveExists = animalStrings.includes("cat", 5);
 console.log(catStartingFromIndexFiveExists);
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
