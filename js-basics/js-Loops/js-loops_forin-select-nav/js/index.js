@@ -19,6 +19,13 @@ const languages = {
 const select = document.createElement("select");
 select.name = "languages";
 main.append(select);
+console.log(languages);
+for (const key in languages) {
+  const option = document.createElement("option");
+  option.value = languages[key];
+  option.textContent = languages[key];
+  select.append(option);
+}
 
 // --v-- write/change code here --v--
 
@@ -36,6 +43,17 @@ const navElement = document.createElement("nav");
 const ul = document.createElement("ul");
 main.append(navElement);
 navElement.append(ul);
+
+for (const navigation in nav) {
+  const list = document.createElement("li");
+  const anchor = document.createElement("a");
+
+  anchor.setAttribute("href", nav[navigation].href);
+  anchor.textContent = nav[navigation].text;
+
+  list.append(anchor);
+  ul.append(list);
+}
 
 // --v-- write/change code here --v--
 
