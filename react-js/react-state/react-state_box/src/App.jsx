@@ -7,7 +7,7 @@ export default function App() {
   function handleClick() {
     setIsActive(!isActive);
     // Check that the value changes correctly.
-    console.log(isActive);
+    //console.log(isActive);
   }
 
   return (
