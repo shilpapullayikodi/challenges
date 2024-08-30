@@ -6,11 +6,11 @@ export default function App() {
 
   const validCode = "🐡🐠🐋";
   const handleClick = (emoji) => {
-    setCode((previousvode) => {
-      if (previousvode === "?") {
+    setCode((previouscode) => {
+      if (previouscode === "?") {
         return emoji;
       } else {
-        return previousvode + emoji;
+        return previouscode + emoji;
       }
     });
   };
