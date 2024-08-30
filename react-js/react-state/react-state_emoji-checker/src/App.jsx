@@ -1,17 +1,26 @@
+import { useState } from "react";
 import "./App.css";
 
 export default function App() {
-  let code = "?";
+  let [code, setCode] = useState("?");
 
   const validCode = "🐡🐠🐋";
-
+  const handleClick = (emoji) => {
+    setCode((previousvode) => {
+      if (previousvode === "?") {
+        return emoji;
+      } else {
+        return previousvode + emoji;
+      }
+    });
+  };
   return (
     <div className="container">
       <div className="button-container">
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐡");
           }}
         >
           <span role="img" aria-label="Pufferfish">
@@ -21,7 +30,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐋");
           }}
         >
           <span role="img" aria-label="Whale">
@@ -31,7 +40,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            handleClick("🐠");
           }}
         >
           <span role="img" aria-label="Clownfish">
@@ -43,7 +52,7 @@ export default function App() {
       <button
         type="button"
         onClick={() => {
-          console.log("Reset Code!");
+          setCode("?");
         }}
       >
         Reset
