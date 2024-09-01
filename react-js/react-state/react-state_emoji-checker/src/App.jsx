@@ -5,15 +5,14 @@ export default function App() {
   let [code, setCode] = useState("?");
 
   const validCode = "🐡🐠🐋";
-  const handleClick = (emoji) => {
-    setCode((previouscode) => {
-      if (previouscode === "?") {
-        return emoji;
-      } else {
-        return previouscode + emoji;
-      }
-    });
-  };
+  function handleClick(emoji) {
+    if (code === "?") {
+      setCode(emoji);
+    } else {
+      setCode(code + emoji);
+    }
+  }
+
   return (
     <div className="container">
       <div className="button-container">
