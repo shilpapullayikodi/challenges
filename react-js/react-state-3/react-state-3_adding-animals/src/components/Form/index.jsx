@@ -1,3 +1,4 @@
+import { uid } from "uid";
 import "./Form.css";
 
 export default function Form({ onAddAnimal }) {
@@ -5,7 +6,7 @@ export default function Form({ onAddAnimal }) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
-
+    data["id"] = uid();
     onAddAnimal(data);
 
     event.target.reset();
