@@ -19,6 +19,7 @@ export default function TheFellowshipOfTheRing() {
           );
         })}
       </ul>
+      <Link href="/volumes/the-two-towers">Next Volume: The Two Towers</Link>
     </>
   );
 }

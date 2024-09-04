@@ -17,6 +17,12 @@ export default function TheTwoTowers() {
           );
         })}
       </ul>
+      <Link href="/volumes/the-fellowship-of-the-ring">
+        Previous Volume: The Fellowship of the Ring
+      </Link>
+      <Link href="/volumes/the-return-of-the-king">
+        Next Volume: The Return of the King
+      </Link>
     </>
   );
 }

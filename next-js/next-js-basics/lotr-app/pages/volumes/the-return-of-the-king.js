@@ -17,6 +17,9 @@ export default function TheReturnOfTheKing() {
           );
         })}
       </ul>
+      <Link href="/volumes/the-two-towers">
+        Previous Volume: The Two Towers
+      </Link>
     </>
   );
 }
