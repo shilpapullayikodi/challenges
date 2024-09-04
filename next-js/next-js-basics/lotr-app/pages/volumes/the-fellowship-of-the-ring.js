@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { volumes } from "@/lib/data";
+import { images } from "@/next.config";
 
 export default function TheFellowshipOfTheRing() {
   const volume = volumes.find(
@@ -7,7 +8,15 @@ export default function TheFellowshipOfTheRing() {
   );
   return (
     <>
+      {/* <img
+        src="/images/public/the-fellowship-of-the-ring.png"
+        height={144}
+        width={144}
+        alt="cover"
+      /> */}
+
       <Link href="/volumes">← All Volumes</Link>
+
       <h1>{volume.title}</h1>
       <p>{volume.description}</p>
       <ul>
