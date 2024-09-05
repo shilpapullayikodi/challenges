@@ -35,7 +35,7 @@ export default function App() {
       <ul>
         {fruits.map((fruit) => (
           <li key={fruit.id}>
-            <Card name={fruit.name} color={fruit.colorq} />
+            <Card name={fruit.name} color={fruit.color} />
           </li>
         ))}
       </ul>
