@@ -15,6 +15,7 @@ const initial = [
 
 export default function App({ Component, pageProps }) {
   const [lights, setLights] = useState(initial);
+  const lightsOnCount = lights.filter((light) => light.isOn === true).length; //get all lights which is turened on.
 
   function handleToggle(id) {
     setLights(
@@ -30,7 +31,12 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <GlobalStyle />
-      <Component {...pageProps} lights={lights} handleToggle={handleToggle} />
+      <Component
+        {...pageProps}
+        lights={lights}
+        handleToggle={handleToggle}
+        lightsOnCount={lightsOnCount}
+      />
     </Layout>
   );
 }
