@@ -11,32 +11,32 @@ const StyledLights = styled.ul`
   justify-content: center;
 `;
 
-export default function Lights() {
+export default function Lights({ isOn, handleToggle }) {
   return (
     <StyledLights>
       <li>
-        <Light name="Living Room" />
+        <Light isOn={isOn} name="Living Room" handleToggle={handleToggle} />
       </li>
       <li>
-        <Light name="Kitchen" />
+        <Light isOn={isOn} name="Kitchen" handleToggle={handleToggle} />
       </li>
       <li>
-        <Light name="Bedroom" />
+        <Light isOn={isOn} name="Bedroom" handleToggle={handleToggle} />
       </li>
       <li>
-        <Light name="Bathroom" />
+        <Light isOn={isOn} name="Bathroom" handleToggle={handleToggle} />
       </li>
       <li>
-        <Light name="Garage" />
+        <Light isOn={isOn} name="Garage" handleToggle={handleToggle} />
       </li>
       <li>
-        <Light name="Porch" />
+        <Light isOn={isOn} name="Porch" handleToggle={handleToggle} />
       </li>
       <li>
-        <Light name="Garden" />
+        <Light isOn={isOn} name="Garden" handleToggle={handleToggle} />
       </li>
       <li>
-        <Light name="Office" />
+        <Light isOn={isOn} name="Office" handleToggle={handleToggle} />
       </li>
     </StyledLights>
   );
