@@ -21,16 +21,17 @@ export default function App({ Component, pageProps }) {
     setLights(
       lights.map((light) => {
         if (light.id === id) {
-          return { ...light, isOn: !light.isOn };
+          return { ...light, isOn: !light.isOn }; //if the id matches which we clicked then toggle, else return the old array
         }
         return light;
       })
     );
   }
   function handleTurnAllOff() {
+    //
     setLights(
       lights.map((light) => {
-        return { ...light, isOn: false };
+        return { ...light, isOn: false }; //while looping it will change all objects to false
       })
     );
   }
