@@ -10,7 +10,30 @@ export default function Form() {
     },
   });
 
-  function handleNameChange(event) {}
+  function handleNameChange(event) {
+    event.preventDefault();
+    const form = event.target;
+    const searchName = form.elements.searchTerm.value;
+    console.log("A new search term was submitted:", searchName);
+    setMountain((prevSession) => {
+         return prevSession.map((s) => {
+          if(s.number !== seasonNumber) {
+           return s;
+         } 
+      return {
+        ...s,
+         episodes: s.episodes.map((e) => {
+         if(e.number !== episodeNumber) {
+          return e;
+         }
+        return {
+          ...e,
+         hasSeen: !e.hasSeen
+         }
+         })
+        }
+       })
+      })
 
   function handleAltitudeChange(event) {}
 
