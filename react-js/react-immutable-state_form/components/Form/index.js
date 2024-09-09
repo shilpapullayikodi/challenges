@@ -16,12 +16,29 @@ export default function Form() {
 
     updateMountain((draft) => {
       draft.name = event.target.value;
-      console.log("A new search term was submitted:", draft.name);
+      // console.log("A new search term was submitted:", draft.name);
     });
   }
-  function handleAltitudeChange(event) {}
+  function handleAltitudeChange(event) {
+    event.preventDefault();
 
-  function handleMountainRangeChange(event) {}
+    updateMountain((draft) => {
+      draft.values.altitude = event.target.value;
+      // console.log("A new search term was submitted:", draft.values.altitude);
+    });
+  }
+
+  function handleMountainRangeChange(event) {
+    event.preventDefault();
+
+    updateMountain((draft) => {
+      draft.values.mountainRange = event.target.value;
+      // console.log(
+      //   "A new search term was submitted:",
+      //   draft.values.mountainRange
+      // );
+    });
+  }
 
   return (
     <StyledForm>
