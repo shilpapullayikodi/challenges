@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { StyledForm, StyledInputContainer } from "./Form.styled";
+import { useImmer } from "use-immer";
 
 export default function Form() {
-  const [mountain, setMountain] = useState({
+  const [mountain, updateMountain] = useImmer({
     name: "Mount Everest",
     values: {
       altitude: 8848,
@@ -12,29 +13,12 @@ export default function Form() {
 
   function handleNameChange(event) {
     event.preventDefault();
-    const form = event.target;
-    const searchName = form.elements.searchTerm.value;
-    console.log("A new search term was submitted:", searchName);
-    setMountain((prevSession) => {
-         return prevSession.map((s) => {
-          if(s.number !== seasonNumber) {
-           return s;
-         } 
-      return {
-        ...s,
-         episodes: s.episodes.map((e) => {
-         if(e.number !== episodeNumber) {
-          return e;
-         }
-        return {
-          ...e,
-         hasSeen: !e.hasSeen
-         }
-         })
-        }
-       })
-      })
 
+    updateMountain((draft) => {
+      draft.name = event.target.value;
+      console.log("A new search term was submitted:", draft.name);
+    });
+  }
   function handleAltitudeChange(event) {}
 
   function handleMountainRangeChange(event) {}
