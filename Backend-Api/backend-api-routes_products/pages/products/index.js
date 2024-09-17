@@ -11,7 +11,7 @@ export default function Products() {
         <li key={data.id}>
           <p>Id: {data.id}</p>
           Name: {data.name}
-          Description: {data.description}
+          <p>Description: {data.description}</p>
           <p>
             Price: {data.price} {data.currency}
           </p>
