@@ -6,7 +6,6 @@ import { StyledLink } from "../Link/Link.styled";
 export default function Product() {
   const router = useRouter();
   const { id } = router.query;
-
   const { data, isLoading } = useSWR(`/api/products/${id}`);
 
   if (isLoading) {
